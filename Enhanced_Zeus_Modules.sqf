@@ -4985,10 +4985,10 @@ MAZ_EZM_fnc_initFunction = {
 				waitUntil {alive player};
 				[
 					[
-						["This Server is Utilizing EZM.","<t align = 'center' shadow = '1' size = '0.7' font='PuristaBold'>%1</t><br/>",15],
+						["This Server is Utilizing EZM Plus.","<t align = 'center' shadow = '1' size = '0.7' font='PuristaBold'>%1</t><br/>",15],
 						["This is a scripted server.","<t align = 'center' shadow = '1' size = '0.65'>%1</t><br/>",5],
 						["Things will not perform as they do normally.","<t align = 'center' shadow = '1' size = '0.55'>%1</t><br/>",5],
-						["Get EZM on the workshop or www.zamarma.com","<t align = 'center' shadow = '1' size = '0.55'>%1</t>",60]
+						["Get EZM Plus on the workshop.","<t align = 'center' shadow = '1' size = '0.55'>%1</t>",60]
 					],
 					safeZoneX + safeZoneW / 1.5,
 					safeZoneY + safeZoneH / 1.3
