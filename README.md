@@ -1,6 +1,7 @@
 
 <p align="center">
-    <img src="https://i.imgur.com/9an3mrd.png" width="500">
+    <img width="512" height="512" alt="68747470733a2f2f692e696d6775722e636f6d2f39616e336d72642e706e67" src="https://github.com/user-attachments/assets/c8e447ee-2b5b-4abd-b700-e30a09c5b2ff" />
+
 </p>
 
 <p align="center">
