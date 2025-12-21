@@ -1,4 +1,4 @@
-comment 'Compiled on 2025-12-21 02:41:27.703854';
+comment 'Compiled on 2025-12-21 04:32:56.802202';
 comment 'Source: src/';
 
 if(!isNull (findDisplay 312) && {!isNil "this"} && {!isNull this}) then {	deleteVehicle this;
