@@ -3,6 +3,7 @@
 
 };
 
+[] call MAZ_EZM_fnc_initFunction;
 MAZ_EZM_fnc_askAboutZeusUnit = {
 	["Create Zeus Unit?",[
 		[
@@ -65,3 +66,5 @@ MAZ_EZM_fnc_askAboutZeusUnit = {
 		_display setVariable ["MAZ_EZM_showSides",true];
 	}] call MAZ_EZM_fnc_createDialog;
 };
+
+[] call MAZ_EZM_fnc_askAboutZeusUnit;

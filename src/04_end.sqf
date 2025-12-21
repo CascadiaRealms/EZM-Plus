@@ -281,7 +281,5 @@ if(isNil "MAZ_EZM_shamelesslyPlugged") then {
 	}] remoteExec ['spawn',-2,"EZM_Moderator_JIP"];
 	missionNamespace setVariable ["MAZ_EZM_shamelesslyPlugged",true,true];
 };
-[] call MAZ_EZM_fnc_initFunction;
-[] call MAZ_EZM_fnc_askAboutZeusUnit;
 };
 deleteVehicle _this;
