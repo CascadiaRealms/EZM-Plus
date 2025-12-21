@@ -1,23 +1,21 @@
 
 <p align="center">
-    <img src="https://i.imgur.com/9an3mrd.png" width="500">
+    <img width="512" height="512" alt="68747470733a2f2f692e696d6775722e636f6d2f39616e336d72642e706e67" src="https://github.com/user-attachments/assets/c8e447ee-2b5b-4abd-b700-e30a09c5b2ff" />
+
 </p>
 
 <p align="center">
     <a href="https://github.com/expung3d/Enhanced-Zeus-Modules/releases">
-        <img src="https://img.shields.io/github/v/release/expung3d/Enhanced-Zeus-Modules?label=Version" alt="EZM Version badge" />
+        <img src="https://img.shields.io/github/v/release/CascadiaRealms/EZM-Plus?label=Version" alt="EZM Version badge" />
     </a>
     <a href="https://github.com/expung3d/Enhanced-Zeus-Modules/tree/dev">
-        <img src="https://img.shields.io/github/commits-since/expung3d/enhanced-zeus-modules/latest/dev?label=New%20Commits%20on%20Dev" alt="Commits badge"/>
+        <img src="https://img.shields.io/github/commits-since/CascadiaRealms/EZM-Plus/latest/dev?label=New%20Commits%20on%20Dev" alt="Commits badge"/>
     </a>
     <a href="https://github.com/expung3d/Enhanced-Zeus-Modules/issues?q=is%3Aopen+is%3Aissue+label%3Abug">
-        <img src="https://img.shields.io/github/issues-raw/expung3d/enhanced-zeus-modules/bug?label=Known%20Bugs" alt="EZM Bugs badge" />
+        <img src="https://img.shields.io/github/issues-raw/CascadiaRealms/EZM-Plus/bug?label=Known%20Bugs" alt="EZM Bugs badge" />
     </a>
     <a href="https://github.com/expung3d/Enhanced-Zeus-Modules/issues?q=is%3Aopen+is%3Aissue+label%3Asuggestion">
-        <img src="https://img.shields.io/github/issues-raw/expung3d/enhanced-zeus-modules/suggestion?label=Feature%20Requests" alt="EZM Feature Requests badge" />
-    </a>
-    <a href="https://discord.gg/W4ew5HP">
-        <img src="https://img.shields.io/discord/700228330959536190?color=7683D5&label=Discord&logo=What" alt="EZM Discord badge" />
+        <img src="https://img.shields.io/github/issues-raw/CascadiaRealms/EZM-Plus/suggestion?label=Feature%20Requests" alt="EZM Feature Requests badge" />
     </a>
 </p>
 
@@ -30,10 +28,6 @@ EZM adds a ton of new modules to Zeuses at the click of a button. Simply placing
 All the scripts in EZM are specifically built for <strong>Arma 3 Public Zeus servers</strong>, with everything within the script complying with the BattlEye filters applied to the Official Servers.
 
 Not only does EZM add modules, but it also can add new vanilla factions to the Zeus interface. Such as: the Malden Defense Force, FIA+, AAF+, CSAT+, and Better Civilians. You can check out the EZM factions by clicking the banner below:
-
-<a href="https://steamcommunity.com/workshop/filedetails/?id=3364978220">
-    <img src="https://imgur.com/NCVWbva.jpeg" alt="EZM Faction banner"/>
-</a>
 
 ## Features
  - Over a hundred new modules for Zeus to improve mission making.
@@ -53,12 +47,12 @@ Not only does EZM add modules, but it also can add new vanilla factions to the Z
  - Server Protection System which alerts players about trolls or scripters.
 
 ## Feedback, Bugs, and Suggestions
-For all feedback please use the [issues system](https://github.com/expung3d/Enhanced-Zeus-Modules/issues). When creating an issue, denote whether it is a suggestion or a bug. If it is a bug, please provide the severity as either LOW, MEDIUM, or URGENT.
+For all feedback please use the [issues system](https://github.com/CascadiaRealms/EZM-Plus/issues). When creating an issue, denote whether it is a suggestion or a bug. If it is a bug, please provide the severity as either LOW, MEDIUM, or URGENT.
 
 ## Contributing
 We appreciate anyone who tries to contribute to EZM. If you'd like to contribute, clone the repository to your computer and create a new branch with your changes. Once it's all working, make a pull request and someone from the team will review it.
 
-To see more information about contributing to this project, check out the [contribution guidelines](https://github.com/expung3d/Enhanced-Zeus-Modules/blob/main/CONTRIBUTING.md).
+To see more information about contributing to this project, check out the [contribution guidelines](https://github.com/CascadiaRealms/EZM-Plus/blob/main/CONTRIBUTING.md).
 
 ## License
-Enhanced Zeus Modules is licensed under the [MIT license](https://github.com/expung3d/Enhanced-Zeus-Modules/blob/main/LICENSE).
+Enhanced Zeus Modules is licensed under the [MIT license](https://github.com/CascadiaRealms/EZM-Plus/blob/main/LICENSE).
