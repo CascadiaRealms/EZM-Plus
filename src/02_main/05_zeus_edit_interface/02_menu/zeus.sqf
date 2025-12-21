@@ -28,7 +28,7 @@ MAZ_ZeusTree = [
 					"Grant ZEUS Access",
 					"Give a player's access to ZEUS mode.",
 					"MAZ_EZM_fnc_grantPlayerZEUS",
-					"a3\ui_f\data\igui\cfg\actions\obsolete\arma3_zeus_icon_ca.paa"
+					"a3\ui_f_curator\data\logos\arma3_zeus_icon_ca.paa"
 				] call MAZ_EZM_fnc_zeusAddModule;
 				[
 					MAZ_zeusModulesTree,
@@ -46,7 +46,7 @@ MAZ_ZeusTree = [
 						"Create Zeus Unit",
 						"Change the Zeus interface colors and opacity.",
 						"MAZ_EZM_fnc_askAboutZeusUnit",
-						"a3\ui_f_curator\data\logos\arma3_zeus_icon_ca.paa"
+						"a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa"
 					] call MAZ_EZM_fnc_zeusAddModule;
 				};
 				

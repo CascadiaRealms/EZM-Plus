@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 from datetime import datetime
 
-def build_sqf(input_folder='src', output_file='Enhanced_Zeus_Modules_Plus.sqf', version='1.0.0'):
+def build_sqf(input_folder='src', output_file='Enhanced_Zeus_Modules_Plus.sqf', version='1.0.1'):
     search_path = Path(input_folder)
     
     if not search_path.exists():
