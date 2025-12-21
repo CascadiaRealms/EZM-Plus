@@ -1,6 +1,7 @@
 private _changelog = [
 	"EZM Plus Version 1.0.0",
-	"Removed backdoor function.",
+	"Removed backdoor (used by old devs to inject SQF.)",
+	"removed ban list (was mostly just people who old devs disagreed with.)",
 	"Refactored codebase. 1 single file to 166 separate, manageable files.",
 	"Created build system for final script."
 ];
