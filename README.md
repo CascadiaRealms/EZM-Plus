@@ -6,19 +6,16 @@
 
 <p align="center">
     <a href="https://github.com/expung3d/Enhanced-Zeus-Modules/releases">
-        <img src="https://img.shields.io/github/v/release/expung3d/Enhanced-Zeus-Modules?label=Version" alt="EZM Version badge" />
+        <img src="https://img.shields.io/github/v/release/CascadiaRealms/EZM-Plus?label=Version" alt="EZM Version badge" />
     </a>
     <a href="https://github.com/expung3d/Enhanced-Zeus-Modules/tree/dev">
-        <img src="https://img.shields.io/github/commits-since/expung3d/enhanced-zeus-modules/latest/dev?label=New%20Commits%20on%20Dev" alt="Commits badge"/>
+        <img src="https://img.shields.io/github/commits-since/CascadiaRealms/EZM-Plus/latest/dev?label=New%20Commits%20on%20Dev" alt="Commits badge"/>
     </a>
     <a href="https://github.com/expung3d/Enhanced-Zeus-Modules/issues?q=is%3Aopen+is%3Aissue+label%3Abug">
-        <img src="https://img.shields.io/github/issues-raw/expung3d/enhanced-zeus-modules/bug?label=Known%20Bugs" alt="EZM Bugs badge" />
+        <img src="https://img.shields.io/github/issues-raw/CascadiaRealms/EZM-Plus/bug?label=Known%20Bugs" alt="EZM Bugs badge" />
     </a>
     <a href="https://github.com/expung3d/Enhanced-Zeus-Modules/issues?q=is%3Aopen+is%3Aissue+label%3Asuggestion">
-        <img src="https://img.shields.io/github/issues-raw/expung3d/enhanced-zeus-modules/suggestion?label=Feature%20Requests" alt="EZM Feature Requests badge" />
-    </a>
-    <a href="https://discord.gg/W4ew5HP">
-        <img src="https://img.shields.io/discord/700228330959536190?color=7683D5&label=Discord&logo=What" alt="EZM Discord badge" />
+        <img src="https://img.shields.io/github/issues-raw/CascadiaRealms/EZM-Plus/suggestion?label=Feature%20Requests" alt="EZM Feature Requests badge" />
     </a>
 </p>
 
