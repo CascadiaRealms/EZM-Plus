@@ -1,4 +1,4 @@
-
+# CONTRIBUTION IS CURRENTLY ON HOLD WHILE REFACTOR IS COMPLETED
 # Enhanced Zeus Modules Contribution Guidelines
 Everything you need to know about contributing to E.Z.M.
 
