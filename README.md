@@ -29,10 +29,6 @@ All the scripts in EZM are specifically built for <strong>Arma 3 Public Zeus ser
 
 Not only does EZM add modules, but it also can add new vanilla factions to the Zeus interface. Such as: the Malden Defense Force, FIA+, AAF+, CSAT+, and Better Civilians. You can check out the EZM factions by clicking the banner below:
 
-<a href="https://steamcommunity.com/workshop/filedetails/?id=3364978220">
-    <img src="https://imgur.com/NCVWbva.jpeg" alt="EZM Faction banner"/>
-</a>
-
 ## Features
  - Over a hundred new modules for Zeus to improve mission making.
  - Context menu on right click to quickly use features.
@@ -51,12 +47,12 @@ Not only does EZM add modules, but it also can add new vanilla factions to the Z
  - Server Protection System which alerts players about trolls or scripters.
 
 ## Feedback, Bugs, and Suggestions
-For all feedback please use the [issues system](https://github.com/expung3d/Enhanced-Zeus-Modules/issues). When creating an issue, denote whether it is a suggestion or a bug. If it is a bug, please provide the severity as either LOW, MEDIUM, or URGENT.
+For all feedback please use the [issues system](https://github.com/CascadiaRealms/EZM-Plus/issues). When creating an issue, denote whether it is a suggestion or a bug. If it is a bug, please provide the severity as either LOW, MEDIUM, or URGENT.
 
 ## Contributing
 We appreciate anyone who tries to contribute to EZM. If you'd like to contribute, clone the repository to your computer and create a new branch with your changes. Once it's all working, make a pull request and someone from the team will review it.
 
-To see more information about contributing to this project, check out the [contribution guidelines](https://github.com/expung3d/Enhanced-Zeus-Modules/blob/main/CONTRIBUTING.md).
+To see more information about contributing to this project, check out the [contribution guidelines](https://github.com/CascadiaRealms/EZM-Plus/blob/main/CONTRIBUTING.md).
 
 ## License
-Enhanced Zeus Modules is licensed under the [MIT license](https://github.com/expung3d/Enhanced-Zeus-Modules/blob/main/LICENSE).
+Enhanced Zeus Modules is licensed under the [MIT license](https://github.com/CascadiaRealms/EZM-Plus/blob/main/LICENSE).
