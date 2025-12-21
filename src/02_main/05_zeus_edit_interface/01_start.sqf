@@ -653,8 +653,8 @@ MAZ_EZM_fnc_editZeusInterface = {
 				[
 					MAZ_zeusModulesTree,
 					MAZ_EZMLabelTree,
-					format ["ZAM Edition - %1",missionNamespace getVariable ['MAZ_EZM_Version','']],
-					"Framework originally created by: M9-SD & GamesByChris.\nExpanded and made public by: Expung3d to enhance Public Zeus.\n\nNeed help? Found a bug? Join our Discord:\nhttps://discord.gg/W4ew5HP",
+					format ["EZM+ - %1",missionNamespace getVariable ['MAZ_EZM_Version','']],
+					"Framework originally created by: M9-SD & GamesByChris.\nExpanded and published by Expung3d to enhance Public Zeus.\nRevamped by MawpMawp404 to comply with TOS.\n\nNeed help? Found a bug? Join our Discord:\nhttps://discord.gg/W4ew5HP",
 					"MAZ_EZM_fnc_hiddenEasterEggModule"
 				] call MAZ_EZM_fnc_zeusAddModule;
 				

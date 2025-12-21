@@ -1,4 +1,4 @@
-comment 'Compiled on 2025-12-20 19:06:23.418793';
+comment 'Compiled on 2025-12-21 02:24:13.497263';
 comment 'Source: src/';
 
 if(!isNull (findDisplay 312) && {!isNil "this"} && {!isNull this}) then {	deleteVehicle this;
@@ -12586,7 +12586,7 @@ comment "##########################################";
 comment "FILE: src/02_main/04_ezm/04_modules/player.sqf";
 comment "##########################################";
 
-MAZ_EZM_fnc_disarmModule = {
+		MAZ_EZM_fnc_disarmModule = {
 			params ["_entity"];
 			if(isNull _entity || !((typeOf _entity) isKindOf "Man")) exitWith {["Unit is not suitable.","addItemFailed"] call MAZ_EZM_fnc_systemMessage;};
 			_entity remoteExec ['removeAllWeapons'];
@@ -17119,6 +17119,75 @@ MAZ_EZM_fnc_toggleGameModerator = {
 				[]
 			] call MAZ_EZM_fnc_createDialog;
 		};
+		
+		MAZ_EZM_fnc_grantPlayerZEUS = {
+    params ["_entity"];
+
+    if (isNull _entity || !(_entity isKindOf "Man")) exitWith {
+        ["Unit is not suitable.", "addItemFailed"] call MAZ_EZM_fnc_systemMessage;
+    };
+
+    if (!isPlayer _entity) exitWith {
+        ["AI Units cannot be granted ZEUS.", "addItemFailed"] call MAZ_EZM_fnc_systemMessage;
+    };
+
+    if (!isNull (getAssignedCuratorLogic _entity)) exitWith {
+        ["Player already has Zeus access.", "addItemFailed"] call MAZ_EZM_fnc_systemMessage;
+    };
+
+    [
+        _entity,
+        {
+            params ["_unit"];
+            
+            private _group = createGroup sideLogic;
+            private _curator = _group createUnit ["ModuleCurator_F", [0,0,0], [], 0, "NONE"];
+            
+			 _curator setVariable ["MAZ_EZM_isDynamic", true, true];
+			
+            _curator setVariable ["Addons", 3, true];
+            _curator setVariable ["owner", getPlayerUID _unit, true];
+
+            _unit assignCurator _curator;
+
+            _curator addCuratorEditableObjects [entities "AllVehicles", true];
+            _curator addCuratorEditableObjects [allUnits, true];
+            _curator addCuratorEditableObjects [allMissionObjects "Static", true];
+        }
+    ] remoteExec ["spawn", 2];
+
+    ["Zeus module created and assigned.", "addItemOk"] call MAZ_EZM_fnc_systemMessage;
+};
+
+MAZ_EZM_fnc_revokePlayerZEUS = {
+    params ["_entity"];
+
+    private _zeusLogic = getAssignedCuratorLogic _entity;
+
+    if (isNull _zeusLogic) exitWith {
+        ["Unit does not have a ZEUS module.", "addItemFailed"] call MAZ_EZM_fnc_systemMessage;
+    };
+
+	private _isDynamic = _zeusLogic getVariable ["MAZ_EZM_isDynamic", false];
+	if (!_isDynamic) exitWith {
+		["Cannot revoke access: This is a Main Zeus module.", "addItemFailed"] call MAZ_EZM_fnc_systemMessage;
+	};
+
+    [
+        _zeusLogic,
+        {
+            params ["_logic"];
+            
+            unassignCurator _logic;
+            
+            private _grp = group _logic;
+            deleteVehicle _logic;
+            deleteGroup _grp;
+        }
+    ] remoteExec ["spawn", 2];
+
+    ["Dynamic Zeus module deleted.", "addItemOk"] call MAZ_EZM_fnc_systemMessage;
+};
 
 comment "##########################################";
 comment "FILE: src/02_main/04_ezm/05_end.sqf";
@@ -17898,8 +17967,8 @@ MAZ_EZM_fnc_editZeusInterface = {
 				[
 					MAZ_zeusModulesTree,
 					MAZ_EZMLabelTree,
-					format ["ZAM Edition - %1",missionNamespace getVariable ['MAZ_EZM_Version','']],
-					"Framework originally created by: M9-SD & GamesByChris.\nExpanded and made public by: Expung3d to enhance Public Zeus.\n\nNeed help? Found a bug? Join our Discord:\nhttps://discord.gg/W4ew5HP",
+					format ["EZM+ - %1",missionNamespace getVariable ['MAZ_EZM_Version','']],
+					"Framework originally created by: M9-SD & GamesByChris.\nExpanded and published by Expung3d to enhance Public Zeus.\nRevamped by MawpMawp404 to comply with TOS.\n\nNeed help? Found a bug? Join our Discord:\nhttps://discord.gg/W4ew5HP",
 					"MAZ_EZM_fnc_hiddenEasterEggModule"
 				] call MAZ_EZM_fnc_zeusAddModule;
 				
@@ -18707,6 +18776,15 @@ MAZ_PlayerModTree = [
 					"MAZ_EZM_fnc_resetLoadout",
 					"a3\ui_f\data\igui\cfg\actions\obsolete\ui_action_gear_ca.paa"
 				] call MAZ_EZM_fnc_zeusAddModule;
+				
+				[
+					MAZ_zeusModulesTree,
+					MAZ_PlayerModTree,
+					"Toggle ZEUS access.",
+					"Give or remvoke a player's access to ZEUS mode.",
+					"MAZ_EZM_fnc_togglePlayerZEUS",
+					"a3\ui_f\data\igui\cfg\actions\obsolete\ui_action_gear_ca.paa"
+				] call MAZ_EZM_fnc_zeusAddModule;
 
 comment "##########################################";
 comment "FILE: src/02_main/05_zeus_edit_interface/02_menu/server.sqf";
@@ -19108,6 +19186,23 @@ MAZ_ZeusTree = [
 					"MAZ_EZM_fnc_editZeusInterfaceColors",
 					"a3\modules_f_curator\data\iconpostprocess_ca.paa"
 				] call MAZ_EZM_fnc_zeusAddModule;
+				
+				[
+					MAZ_zeusModulesTree,
+					MAZ_ZeusTree,
+					"Grant ZEUS Access",
+					"Give a player's access to ZEUS mode.",
+					"MAZ_EZM_fnc_grantPlayerZEUS",
+					"a3\ui_f\data\igui\cfg\actions\obsolete\arma3_zeus_icon_ca.paa"
+				] call MAZ_EZM_fnc_zeusAddModule;
+				[
+					MAZ_zeusModulesTree,
+					MAZ_ZeusTree,
+					"Revoke ZEUS Access",
+					"Revoke a player's access to ZEUS mode.",
+					"MAZ_EZM_fnc_revokePlayerZEUS",
+					"a3\ui_f_curator\data\logos\arma3_zeus_icon_ca.paa"
+				] call MAZ_EZM_fnc_zeusAddModule;
 
 				if(typeOf player != "C_Man_French_universal_F") then {
 					[
@@ -19116,9 +19211,11 @@ MAZ_ZeusTree = [
 						"Create Zeus Unit",
 						"Change the Zeus interface colors and opacity.",
 						"MAZ_EZM_fnc_askAboutZeusUnit",
-						"a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa"
+						"a3\ui_f_curator\data\logos\arma3_zeus_icon_ca.paa"
 					] call MAZ_EZM_fnc_zeusAddModule;
 				};
+				
+				
 
 comment "##########################################";
 comment "FILE: src/02_main/05_zeus_edit_interface/03_end.sqf";

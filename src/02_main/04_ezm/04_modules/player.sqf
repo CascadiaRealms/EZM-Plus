@@ -1,4 +1,4 @@
-MAZ_EZM_fnc_disarmModule = {
+		MAZ_EZM_fnc_disarmModule = {
 			params ["_entity"];
 			if(isNull _entity || !((typeOf _entity) isKindOf "Man")) exitWith {["Unit is not suitable.","addItemFailed"] call MAZ_EZM_fnc_systemMessage;};
 			_entity remoteExec ['removeAllWeapons'];

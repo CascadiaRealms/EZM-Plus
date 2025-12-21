@@ -75,3 +75,12 @@ MAZ_PlayerModTree = [
 					"MAZ_EZM_fnc_resetLoadout",
 					"a3\ui_f\data\igui\cfg\actions\obsolete\ui_action_gear_ca.paa"
 				] call MAZ_EZM_fnc_zeusAddModule;
+				
+				[
+					MAZ_zeusModulesTree,
+					MAZ_PlayerModTree,
+					"Toggle ZEUS access.",
+					"Give or remvoke a player's access to ZEUS mode.",
+					"MAZ_EZM_fnc_togglePlayerZEUS",
+					"a3\ui_f\data\igui\cfg\actions\obsolete\ui_action_gear_ca.paa"
+				] call MAZ_EZM_fnc_zeusAddModule;
